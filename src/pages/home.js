@@ -15,7 +15,7 @@ const Home = () => {
           <Feature.SubTitle>Watch anywhere. Cancel anytime.</Feature.SubTitle>
           <OptForm>
             <OptForm.Input placeholder="Email address(Demo purpose only)" />
-            <Link to="/signup">
+            <Link to="/signup" style={{ textDecoration: "none" }}>
               <OptForm.Button>Try it now</OptForm.Button>
             </Link>
             <OptForm.Break />
