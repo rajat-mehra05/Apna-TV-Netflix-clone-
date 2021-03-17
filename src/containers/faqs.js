@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Accordion, OptForm } from "../components";
 import faqsData from "../fixtures/faqs";
 
@@ -16,8 +17,10 @@ export function FaqsContainer() {
       </Accordion.Frame>
 
       <OptForm>
-        <OptForm.Input placeholder="Email address" />
-        <OptForm.Button>Try it now</OptForm.Button>
+        <OptForm.Input placeholder="Email address (Demo purpose only)" />
+        <Link to="/signup" style={{ textDecoration: "none" }}>
+          <OptForm.Button>Try it now</OptForm.Button>
+        </Link>
         <OptForm.Break />
         <OptForm.Text>
           Ready to watch? Enter your email to create or restart your membership.

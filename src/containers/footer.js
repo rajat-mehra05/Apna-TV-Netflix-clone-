@@ -4,22 +4,27 @@ import Footer from "../components/footer";
 export function FooterContainer() {
   return (
     <Footer>
-      <Footer.Title>Questions? Call 000-800-040-1843</Footer.Title>
+      <Footer.Title>
+        This website is replica of Netflix, created for practice purposes.{" "}
+        <br />
+        <br />
+        No API is being used in this site.
+        <br />
+        <br />
+        For each series or movie, only one video will be played.
+      </Footer.Title>
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>
           <Footer.Link href="#">FAQ</Footer.Link>
           <Footer.Link href="#">Investor Relations</Footer.Link>
           <Footer.Link href="#">Ways to Watch</Footer.Link>
-          <Footer.Link href="#">Corporate Information</Footer.Link>
-          <Footer.Link href="#">Netflix Originals</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
           <Footer.Link href="#">Help Centre</Footer.Link>
           <Footer.Link href="#">Jobs</Footer.Link>
           <Footer.Link href="#">Terms of Use</Footer.Link>
-          <Footer.Link href="#">Contact Us</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
@@ -30,14 +35,25 @@ export function FooterContainer() {
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Media Centre</Footer.Link>
-          <Footer.Link href="#">Buy gift cards</Footer.Link>
-          <Footer.Link href="#">Cookie Preferences</Footer.Link>
-          <Footer.Link href="#">Legal Notices</Footer.Link>
+          <Footer.Link href="https://twitter.com/_rajat_mehra_" target="_blank">
+            Contact Me
+          </Footer.Link>
+          <Footer.Link href="https://twitter.com/_rajat_mehra_" target="_blank">
+            Twitter
+          </Footer.Link>
+          <Footer.Link
+            href="https://www.linkedin.com/in/rajat-mehra-/"
+            target="_blank"
+          >
+            LinkedIn
+          </Footer.Link>
+          <Footer.Link href="https://github.com/rajat-mehra05" target="_blank">
+            GitHub
+          </Footer.Link>
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Netflix India</Footer.Text>
+      <Footer.Text>अपना TV India</Footer.Text>
     </Footer>
   );
 }

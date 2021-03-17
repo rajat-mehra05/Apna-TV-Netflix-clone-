@@ -41,6 +41,7 @@ export const Link = styled.p`
   cursor: pointer;
   &:hover {
     font-weight: bold;
+    color: green;
   }
   &:last-of-type {
     margin-right: 0;
@@ -112,6 +113,12 @@ export const ButtonLink = styled(ReactRouterLink)`
   text-decoration: none;
   &:hover {
     background: #f40612;
+  }
+  @media (max-width: 650px) {
+    margin-right: 0.5rem;
+  }
+  @media (max-width: 600px) {
+    margin-right: 0.5rem;
   }
 `;
 
@@ -198,12 +205,18 @@ export const Text = styled.p`
 `;
 
 export const Logo = styled.img`
-  height: 36px;
-  width: 134px;
+  height: 200px;
+  width: 240px;
   margin-right: 40px;
+  margin-top: 2rem;
   @media (min-width: 1449px) {
     height: 45px;
-    width: 167px;
+    width: 107px;
+  }
+  @media (max-width: 600px) {
+    margin-right: 10px;
+    height: 200px;
+    width: 180px;
   }
 `;
 

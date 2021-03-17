@@ -7,8 +7,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="11.5in"
-   height="11.5in"
+   width="1024"
+   height="250"
    viewBox="0 0 11.5 11.5"
    version="1.1"
    id="svg24"
@@ -19,8 +19,8 @@
     <rect
        x="1.9940476"
        y="1.1309524"
-       width="5.7440476"
-       height="1.6666667"
+       width="1024"
+       height="240.455"
        id="rect28" />
   </defs>
   <sodipodi:namedview
@@ -38,7 +38,7 @@
      inkscape:document-rotation="0"
      showgrid="false"
      units="in"
-     width="11.5in"
+     width="1024"
      inkscape:window-width="1366"
      inkscape:window-height="715"
      inkscape:window-x="-8"
