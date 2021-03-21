@@ -6,13 +6,14 @@ import "firebase/auth";
 // we need to somehow see the database
 
 //config required here
+// use your own firebase config
 const config = {
-  apiKey: "AIzaSyB3XXjj2dE9cmAm843QkdOW48G7DJdPoTM",
-  authDomain: "netflix-clone-fdeba.firebaseapp.com",
-  projectId: "netflix-clone-fdeba",
-  storageBucket: "netflix-clone-fdeba.appspot.com",
-  messagingSenderId: "372613729069",
-  appId: "1:372613729069:web:3a2f465ab9afd73c17a1a4",
+  apiKey: "",
+  authDomain: "",
+  projectId: "ba",
+  storageBucket: "",
+  messagingSenderId: "3",
+  appId: "1",
 };
 
 const firebase = Firebase.initializeApp(config);
