@@ -6,6 +6,7 @@ import logo from "../logo3.svg";
 import { FirebaseContext } from "../context/firebase";
 import { SelectProfileContainer } from "./profiles";
 import { FooterContainer } from "./footer";
+import { useHistory } from "react-router-dom";
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState("series");
@@ -13,6 +14,7 @@ export function BrowseContainer({ slides }) {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [slideRows, setSlideRows] = useState([]);
+  const history = useHistory();
 
   const { firebase } = useContext(FirebaseContext);
   const user = firebase.auth().currentUser || {};
@@ -72,6 +74,11 @@ export function BrowseContainer({ slides }) {
                 <Header.Group>
                   <Header.Picture src={user.photoURL} />
                   <Header.TextLink>{user.displayName}</Header.TextLink>
+                </Header.Group>
+                <Header.Group>
+                  <Header.TextLink onClick={() => history.push("/editprofile")}>
+                    Edit Profile
+                  </Header.TextLink>
                 </Header.Group>
                 <Header.Group>
                   <Header.TextLink onClick={() => firebase.auth().signOut()}>

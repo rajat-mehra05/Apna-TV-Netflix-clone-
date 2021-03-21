@@ -4,6 +4,7 @@ import { Home, Browse, SignIn, SignUp } from "./pages";
 import * as ROUTES from "./constants/routes";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/routes";
 import { useAuthListener } from "./hooks";
+import ProfileScreen from "./containers/editProfile/ProfileScreen";
 
 export function App() {
   const { user } = useAuthListener();
@@ -27,6 +28,9 @@ export function App() {
         </IsUserRedirect>
         <ProtectedRoute user={user} path={ROUTES.BROWSE}>
           <Browse />
+        </ProtectedRoute>
+        <ProtectedRoute user={user} path={ROUTES.PROFILE}>
+          <ProfileScreen />
         </ProtectedRoute>
         <IsUserRedirect
           user={user}
